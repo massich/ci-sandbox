@@ -11,8 +11,7 @@ matrix:
       osx_image: xcode8.3
 
 before_install:
-  - brew install hdf5 libmatio
-  - brew upgrade python
+  - brew install hdf5 libmatio python3
   - pip install getgist
 
 script:
