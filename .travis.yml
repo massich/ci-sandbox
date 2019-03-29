@@ -14,7 +14,8 @@ before_install:
   - brew install hdf5 libmatio
   - brew upgrade python
   - pip install getgist
-  - getgist massich test_libmatio.cc  
+  # - getgist massich test_libmatio.cc  
+  - wget https://gist.githubusercontent.com/massich/7709ac62edd86047293f01c79f8cf819/raw/d5b9806e5336ffea0c82085aa0dbef89e1daf8cf/test_libmatio.cc
   - wget "https://web.uvic.ca/~monahana/eos225/poc_data.mat.sfx"
 
 script:
