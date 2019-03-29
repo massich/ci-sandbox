@@ -11,7 +11,8 @@ matrix:
       osx_image: xcode8.3
 
 before_install:
-  - brew install hdf5 libmatio python3
+  - brew install hdf5 libmatio
+  - brew upgrade python
   - pip install getgist
   - getgist massich test_libmatio.cc  
   - wget "https://web.uvic.ca/~monahana/eos225/poc_data.mat.sfx"
